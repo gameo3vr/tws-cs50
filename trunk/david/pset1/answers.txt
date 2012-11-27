@@ -1,0 +1,10 @@
+# Page 8 #
+
+Q: What's a library?
+A: 
+
+Q: What role does "#include <cs50.h> play?
+A:
+
+Q: What role does "-lcs50" play as an argument to Clang?
+A: 
