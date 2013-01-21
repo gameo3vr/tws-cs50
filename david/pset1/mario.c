@@ -1,34 +1,47 @@
 /*
 Description:
 
-Takes an integer as a the height of 
+Takes an integer as a the height of Mario pyramid and prints the pyramid
+to standard output.
 
 Author: David Englund
-Specification: pset1, page 8
+Specification: pset1, page 10
 */
 
 #include <stdio.h>
 
-float convertCelciusToF(float);
+void drawPyramid(int height);
 
 int main(void) {
+
+    // Get a number between 2 and 10
+    int input;
+    do {
+        printf("Height: ");
+        scanf("%i", &input);
+    }
+    while (input > 10 || input < 2);
     
-    // Prompt for temperature in celcius to convert
-    printf("C: ");
-    
-    // Get user input
-    float tempInCelcius;
-    scanf("%f", &tempInCelcius);
-    
-    // Convert from Celcius to F.
-    float tempInF = convertCelciusToF(tempInCelcius);
-    
-    // Display the converted result
-    printf("F: %4.1f\n", tempInF);
-    
+    drawPyramid(input);
+        
     return 0;
 }
 
-float convertCelciusToF(float celcius) {
-    return celcius * 1.8 + 32.0;
+void drawPyramid(int height) {
+
+    int i;
+    int j;
+    for (i = 1; i < height + 1; i++) {
+    
+        // print blanks
+        for (j = 0; j < height - i; j++) {
+            printf(" ");
+        }
+    
+        // print blocks
+        for (j = 0; j < i + 1; j++) {
+            printf("#");
+        }
+        printf("\n");
+    }
 }
