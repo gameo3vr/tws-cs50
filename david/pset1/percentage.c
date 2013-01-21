@@ -27,7 +27,7 @@ int main(void) {
     float percent = numerator / denominator * 100.0;
     
     // Display the converted result
-    printf("F: %4.1f\n", percent);
+    printf("Percent: %4.1f\n", percent);
     
     return 0;
 }
