@@ -1,0 +1,1 @@
+Common location to share homework solutions for Harvard's CS50 (http://cs50.tv & http://cs50.net).

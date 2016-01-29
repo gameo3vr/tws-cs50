@@ -1,0 +1,7 @@
+# Projects #
+
+Toward the end of CS50, we'll try to tackle a project together or in groups, taking on a problem that we face here at Third Wave.
+
+## Volume Mesh Comparison ##
+
+## Material Database Application ##
